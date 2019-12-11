@@ -1,0 +1,10 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - serverless-offline > jsonwebtoken > joi > hoek:
+        patched: '2019-12-11T04:36:32.205Z'
+    - serverless-offline > jsonwebtoken > joi > topo > hoek:
+        patched: '2019-12-11T04:36:32.205Z'
