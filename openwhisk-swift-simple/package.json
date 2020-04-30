@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "description": "Example demonstrates how to setup a simple Swift function with OpenWhisk.",
   "dependencies": {
-    "serverless-openwhisk": ">=0.13.0"
-  }
+    "serverless-openwhisk": ">=0.13.0",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
