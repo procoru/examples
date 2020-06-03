@@ -4,9 +4,15 @@
   "description": "Demonstration of protecting API gateway endpoints with auth0",
   "license": "MIT",
   "dependencies": {
-    "serverless": "^1.28.0"
+    "serverless": "^1.28.0",
+    "snyk": "^1.334.0"
   },
   "devDependencies": {
     "serverless-offline": "^3.18.0"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
